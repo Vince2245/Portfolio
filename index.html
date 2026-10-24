@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vince Suico | Aspiring Software Engineer</title>
+  <meta name="description" content="Portfolio of Vince Suico, a BSIT student and aspiring software engineer focused on practical software and thoughtful web experiences.">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:title" content="Vince Suico | Aspiring Software Engineer">
+  <meta property="og:description" content="BSIT student building a foundation in software development, problem-solving, and the web.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Ctext x='32' y='43' font-size='30' font-family='sans-serif' font-weight='700' fill='%238b7cff' text-anchor='middle'%3EVS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">Vince<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-btn" id="themeBtn" type="button" aria-label="Switch to light mode">Light</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hello"><span class="availability-dot"></span> Hi, I'm Vince — aspiring software engineer</p>
+          <h1 id="name" aria-label="Building software with purpose">Building software with purpose.</h1>
+          <p class="role">
+            <span class="sr-only">BSIT student focused on software engineering</span>
+            <span aria-hidden="true"><span id="typed">BSIT student focused on software engineering</span><span class="caret"></span></span>
+          </p>
+          <p class="lead">I’m a 4th-year BSIT student who enjoys breaking down problems and turning ideas into clear, useful software. I’m growing my skills across programming, web development, and thoughtful interface design.</p>
+
+          <div class="actions">
+            <a class="btn primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="btn" href="#contact">Contact me</a>
+            <a class="btn ghost" href="https://github.com/Vince2245" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+
+          <ul class="mini-stats" aria-label="Quick highlights">
+            <li><strong>4th year</strong><span>Information Technology</span></li>
+            <li><strong>Software</strong><span>problem-solving mindset</span></li>
+            <li><strong>Building</strong><span>web & programming skills</span></li>
+          </ul>
+        </div>
+
+        <div class="photo-wrap" id="tilt">
+          <div class="profile-card">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <img class="photo" src="images/vince-suico.jpg" alt="Vince Suico" width="768" height="1024" fetchpriority="high">
+            <div class="status-badge"><span class="dot"></span>Open to internships</div>
+          </div>
+          <div class="code-note" aria-hidden="true">
+            <span class="code-note-label">CURRENT MODE</span>
+            <code><span>while</span> (learning) { build(); }</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">About me</p>
+        <h2>Curious by nature. Engineer-minded by choice.</h2>
+      </div>
+
+      <div class="two">
+        <div class="prose" data-reveal>
+          <p>I’m John Vincent Suico, but most people call me Vince. I’m in my fourth year of the Bachelor of Science in Information Technology program at Cebu Eastern College Incorporated.</p>
+          <p>My coursework has introduced me to programming, systems thinking, and web fundamentals. I enjoy understanding how things work under the hood, then shaping that logic into something people can use.</p>
+          <p>I’m drawn to software engineering because it brings together structured problem-solving, continuous learning, and real-world impact. I care about code that is clear and interfaces that feel natural to use.</p>
+          <p>As I keep learning, I’m looking for opportunities to contribute, collaborate, and grow into a dependable software engineer.</p>
+        </div>
+
+        <aside class="card glance" data-reveal aria-label="At a glance">
+          <h3>At a glance</h3>
+          <dl>
+            <dt>School</dt>
+            <dd>Cebu Eastern College Incorporated</dd>
+            <dt>Program</dt>
+            <dd>BSIT</dd>
+            <dt>Year level</dt>
+            <dd>4th year</dd>
+            <dt>Focus</dt>
+            <dd>Software engineering, web development, problem-solving</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section band" id="skills">
+      <div class="inner">
+        <div class="section-heading centered" data-reveal>
+          <p class="eyebrow">Skills</p>
+          <h2>My current toolkit.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="card" data-reveal>
+            <h3>Programming languages</h3>
+            <ul class="chips">
+              <li>C</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>Java</li>
+              <li>Python</li>
+            </ul>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>Web development</h3>
+            <ul class="chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>Core strengths</h3>
+            <ul class="chips">
+              <li>Problem solving</li>
+              <li>UI basics</li>
+              <li>Logic building</li>
+              <li>Learning fast</li>
+            </ul>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>What I’m learning</h3>
+            <ul class="chips">
+              <li>Frontend polish</li>
+              <li>Clean architecture</li>
+              <li>Project thinking</li>
+              <li>Collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects that show my growth.</h2>
+      </div>
+
+      <div class="project-list">
+        <article class="card featured" data-reveal>
+          <div class="project-art aegis-art" aria-hidden="true">
+            <span class="art-index">01 / ACADEMIC</span>
+            <div class="system-visual">
+              <span class="system-orbit"></span>
+              <span class="system-core">A</span>
+              <span class="system-line line-one"></span>
+              <span class="system-line line-two"></span>
+              <span class="system-line line-three"></span>
+            </div>
+            <span class="art-caption">MONITOR · UNDERSTAND · MAINTAIN</span>
+          </div>
+          <div class="card-body">
+            <p class="project-tag">Academic project</p>
+            <h3>AEGIS: Computer Health Monitoring and Predictive Maintenance</h3>
+            <p>An academic project exploring computer health monitoring and predictive maintenance. A practical software-engineering challenge centered on system health and proactive care.</p>
+            <div class="links">
+              <a href="https://github.com/Vince2245" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card featured alt" data-reveal>
+          <div class="project-art portfolio-art" aria-hidden="true">
+            <span class="art-index">02 / PERSONAL</span>
+            <div class="editor-window">
+              <div class="editor-top"><i></i><i></i><i></i><span>portfolio.js</span></div>
+              <div class="editor-code">
+                <span><b>const</b> portfolio = {</span>
+                <span class="indent">name: <em>'Vince Suico'</em>,</span>
+                <span class="indent">focus: <em>'software'</em>,</span>
+                <span class="indent">learning: <strong>true</strong></span>
+                <span>};</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="project-tag">Personal portfolio</p>
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio built with HTML, CSS, and JavaScript. It brings together my background, current skills, and project work in one place.</p>
+            <ul class="chips project-chips" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="links">
+              <a href="#home">Back to the top <span aria-hidden="true">↑</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section band" id="education">
+      <div class="inner">
+        <div class="section-heading centered" data-reveal>
+          <p class="eyebrow">Education</p>
+          <h2>My academic path.</h2>
+        </div>
+
+        <div class="timeline" data-reveal>
+          <div class="timeline-item">
+            <span class="year">4th year</span>
+            <div class="timeline-card card">
+              <h3>Cebu Eastern College Incorporated</h3>
+              <p>Bachelor of Science in Information Technology (BSIT), currently in my fourth year.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="card cta" data-reveal>
+        <p class="eyebrow">Let’s connect</p>
+        <h2>Open to internships, collaborations, and new challenges.</h2>
+        <p class="sub">Have an opportunity or an idea to discuss? Send me a message and I’ll get back to you.</p>
+        <form class="contact-form" id="contactForm" data-form-endpoint="https://formspree.io/f/mdeekkwg" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contactName">Your name</label>
+              <input id="contactName" name="name" type="text" autocomplete="name" maxlength="100" required>
+            </div>
+            <div class="form-field">
+              <label for="contactEmail">Email address</label>
+              <input id="contactEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" maxlength="5000" required></textarea>
+          </div>
+          <div class="honeypot" aria-hidden="true">
+            <label for="contactWebsite">Leave this field empty</label>
+            <input id="contactWebsite" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form-submit">
+            <button class="btn primary" id="sendMessage" type="submit">Send message <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+        <p class="addr">Prefer email? <a href="mailto:suicovincent53@gmail.com?subject=Portfolio%20inquiry">suicovincent53@gmail.com</a>
+          <button class="copy-email" id="copyBtn" type="button">Copy</button>
+          <span id="copyMsg" role="status" aria-live="polite"></span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> John Vincent R. Suico</p>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/Vince2245" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="#home">Back to top</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
