@@ -387,7 +387,53 @@ h3 {
   border-bottom: 2px solid rgba(139, 124, 255, 0.45);
 }
 
-.alt { background: rgba(17, 29, 52, 0.84); }
+.alt { background: var(--surface); }
+
+:root[data-theme="light"] .aegis-art {
+ background:
+   radial-gradient(ellipse at 50% 52%, rgba(38, 170, 160, 0.2), transparent 36%),
+   linear-gradient(145deg, #e4f6f7, #eaf0ff 58%, #f2edff);
+}
+
+:root[data-theme="light"] .aegis-art::before {
+ opacity: 0.4;
+ background-image: linear-gradient(rgba(41, 93, 125, 0.13) 1px, transparent 1px), linear-gradient(90deg, rgba(41, 93, 125, 0.13) 1px, transparent 1px);
+}
+
+:root[data-theme="light"] .art-index,
+:root[data-theme="light"] .art-caption {
+ color: rgba(31, 49, 78, 0.72);
+}
+
+:root[data-theme="light"] .portfolio-art {
+ background:
+   radial-gradient(ellipse at 75% 20%, rgba(137, 111, 255, 0.2), transparent 35%),
+   linear-gradient(145deg, #ecebff, #e9efff 62%, #e5f2fc);
+}
+
+:root[data-theme="light"] .portfolio-art::before {
+ opacity: 0.28;
+ background-image: radial-gradient(rgba(81, 65, 165, 0.6) 1px, transparent 1px);
+}
+
+:root[data-theme="light"] .editor-window {
+ border-color: rgba(78, 104, 175, 0.22);
+ background: rgba(255, 255, 255, 0.9);
+ box-shadow: 0 30px 60px -30px rgba(47, 63, 110, 0.3), 0 0 42px rgba(139, 124, 255, 0.14);
+}
+
+:root[data-theme="light"] .editor-top {
+ border-bottom-color: rgba(78, 104, 175, 0.14);
+ color: #4d5a7a;
+}
+
+:root[data-theme="light"] .editor-code {
+ color: #26334f;
+}
+
+:root[data-theme="light"] .editor-code b { color: #7048bd; }
+:root[data-theme="light"] .editor-code em { color: #17794e; }
+:root[data-theme="light"] .editor-code strong { color: #a05a17; }
 
 .timeline {
   display: grid;
